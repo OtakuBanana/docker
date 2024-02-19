@@ -1,8 +1,11 @@
 # Docker Desktop
 ## 1、拉取MySQL:8.0.36-oracle的镜像
+### 1、命令拉取
 ```
 docker pull mysql:8.0.36-oracle
 ```
+### 2、Docker Desktop拉取
+![image](https://github.com/OtakuBanana/docker/assets/14883112/bc59be71-89ff-40ce-aad5-fa92db065c22)
 ## 2、点击run生成
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/c7c5736f-37cc-4f5a-a053-ba9d088f393b)
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/798420d0-7221-4ecc-a779-4a5d96ae205a)
