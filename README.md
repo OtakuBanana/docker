@@ -15,6 +15,19 @@ C:\ProgramData\Docker\volumes
 ```
 /var/lib/docker/volumes/
 ```
+## 查看&启动&停止容器
+```
+# 查看所有容器
+docker ps -a
+# 查看运行中的容器
+docker ps
+# 停止容器
+docker stop 容器ID或容器名称
+# 启动容器
+docker start 容器ID或容器名称
+# 启动容器挂在后台
+docker start -d 容器ID或容器名称
+```
 ## 如何在 Linux containers 下创建容器，在主机目录上浏览容器目录（以MySQL为例）
 ### 1.命令版
 ```
