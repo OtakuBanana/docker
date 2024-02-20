@@ -1,5 +1,5 @@
 # Docker
-## Docker Desktop容器位置
+## Docker Desktop 容器位置
 ```
 \\wsl.localhost\docker-desktop-data\mnt\wslg\distro\data\docker\containers
 ```
@@ -7,15 +7,15 @@
 ```
 \\wsl.localhost\docker-desktop-data
 ```
-## Windows containers卷位置
+## Windows containers 卷位置
 ```
 C:\ProgramData\Docker\volumes
 ```
-## Linux containers卷位置
+## Linux containers 卷位置
 ```
 /var/lib/docker/volumes/
 ```
-## 如何在Linux containers下创建容器，在主机目录上浏览容器目录（以MySQL为例）
+## 如何在 Linux containers 下创建容器，在主机目录上浏览容器目录（以MySQL为例）
 ```
 # docker run -d -p 主机端口:容器端口 -e 环境变量=值 -v 主机目录:容器目录 --name 容器名称 镜像名称:版本
 docker run -d --name MySQL8.0.36-oracle mysql:8.0.36-oracle \
