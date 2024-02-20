@@ -8,3 +8,7 @@ docker系列
 ```
 \\wsl.localhost\docker-desktop-data
 ```
+## 本地卷位置（可能存在于）
+```
+C:\ProgramData\Docker\volumes
+```
