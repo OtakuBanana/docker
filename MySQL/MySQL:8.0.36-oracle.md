@@ -16,18 +16,14 @@ docker run -d --name MySQL8.0.36-oracle mysql:8.0.36-oracle \
 使用主机的33080和33081为端口映射到容器的3306和33060端口，  
 使用环境变量设置数据库的root密码为Mysql80，  
 主机目录D:\Docker\volume/MySQL8.0.36-oracle映射到容器目录的/var/lib/mysql，也就是在主机的此目录下可以读写该容器目录。
-### 3、查看&启动&停止容器
+### 3、停止&启动容器
 ```
-# 查看所有容器
-docker ps -a
-# 查看运行中的容器
-docker ps
 # 停止容器
-docker stop 容器ID或容器名称
+docker stop MySQL8.0.36-oracle
 # 启动容器
-docker start 容器ID或容器名称
+docker start MySQL8.0.36-oracle
 # 启动容器挂在后台
-docker start -d 容器ID或容器名称
+docker start -d MySQL8.0.36-oracle
 ```
 ### 4、测试连接
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/6bee9365-b790-4279-b069-6c32214708e8)
