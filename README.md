@@ -16,6 +16,7 @@ C:\ProgramData\Docker\volumes
 /var/lib/docker/volumes/
 ```
 ## 如何在 Linux containers 下创建容器，在主机目录上浏览容器目录（以MySQL为例）
+### 1.命令版
 ```
 # docker run -d -p 主机端口:容器端口 -e 环境变量=值 -v 主机目录:容器目录 --name 容器名称 镜像名称:版本
 docker run -d --name MySQL8.0.36-oracle mysql:8.0.36-oracle \
@@ -27,4 +28,5 @@ docker run -d --name MySQL8.0.36-oracle mysql:8.0.36-oracle \
 使用主机的33080和33081为端口映射到容器的3306端口，  
 使用环境变量设置数据库的root密码为Mysql80，  
 主机目录D:\Docker\volume/MySQL8.0.36-oracle映射到容器目录的/var/lib/mysql，也就是在主机的此目录下可以读写该容器目录。  
+### 2.桌面版
 [Docker Desktop中创建MySQL容器](MySQL/MySQL%3A8.0.36-oracle.md)
