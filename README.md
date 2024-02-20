@@ -23,6 +23,7 @@ docker run -d --name MySQL8.0.36-oracle mysql:8.0.36-oracle \
 -e MYSQL_ROOT_PASSWORD=Mysql80 \
 -v /d/Docker/volume/MySQL8.0.36-oracle:/var/lib/mysql
 ```
-以上命令创建一个镜像为mysql:8.0.36-oracle的MySQL8.0.36-oracle容器
-使用主机的33080和33081为端口映射到容器的3306端口，使用环境变量设置数据库的root密码为Mysql80
-并且主机目录D:\Docker\volume/MySQL8.0.36-oracle映射到容器目录的/var/lib/mysql，也就是在主机的此目录下可以读写该容器目录。
+以上命令创建一个镜像为mysql:8.0.36-oracle的MySQL8.0.36-oracle容器，  
+使用主机的33080和33081为端口映射到容器的3306端口，  
+使用环境变量设置数据库的root密码为Mysql80，  
+主机目录D:\Docker\volume/MySQL8.0.36-oracle映射到容器目录的/var/lib/mysql，也就是在主机的此目录下可以读写该容器目录。
