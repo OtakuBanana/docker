@@ -7,10 +7,10 @@ ps：此教程也许不准确，但是是基于个人理解在本地docker跑多
 ### 2、创建对应网段
 通过命令创建网段供MySQL集群使用
 ```
-# 创建一个mysql-net名称的网段，并设置其ip、16位
-docker network create --subnet=172.18.0.0/16 mysql-net
+# 创建一个MySQL-Net名称的网段，并设置其ip、16位
+docker network create --subnet=172.18.0.0/16 MySQL-Net
 # 查询网段
-docker network inspect mysql-net
+docker network inspect MySQL-Net
 ```
 ### 3、创建第一个数据库
 在创建前可以重命名镜像，缩减长度的同时也避免粗心写错
