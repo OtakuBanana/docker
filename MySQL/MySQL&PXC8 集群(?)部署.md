@@ -51,8 +51,8 @@ docker run -d -p 33089:3306 -v /d/Docker/volume/MySQL-Cluster/M3:/var/lib/mysql 
 该命令增加了一个CLUSTER_JOIN=MySQL-Cluster-M1，用来指定加入到某个集群容器
 #### 首次创建其节点容器的时候会出现错误，我们需要进入到第一个容器的目录里，将.pem文件拷贝覆盖到其节点容器目录，再次启动即可正常运行。
 默认情况下，PXC8启用了SSL/TLS。  
-### 5、测试连接
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/6464f2da-eb73-46ad-a307-6a9df136bfbb)
+### 5、测试连接
 当容器都正常运行后我们就可以测试连接了  
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/46658110-5806-4b0a-8c9d-55f3c51a3a80)
 ![image](https://github.com/OtakuBanana/docker/assets/14883112/37c95d92-fcef-4b92-8eec-97ae78cdd128)
